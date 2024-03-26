@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    width: 1080px;
+    height: 300rem;
+    min-height: 100vh;
+    background: rgb(15, 18, 48);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.XDD {
+    top: 600;
+    position: absolute;
+}
+
+/* Navigation Bar Section */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(15, 18, 48, 0.233);
+    backdrop-filter: blur(6px);
+    border: 0.1px solid rgb(15, 18, 48);
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    color: aqua;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: aqua;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: aqua;
+}
+
+/* Intro / About / Social Medias Section */
+
+/* Intro / About  */
+
+.h1Greet {
+    font-size: 25px;
+    position: relative;
+    top: 300px;
+    margin-left: 50px;
+    color: aqua;
+}
+
+.h1ME {
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+}
+
+.killua {
+    position: absolute;
+    right: 150;
+}
+
+.killua img {
+    height: 30rem;
+}
+
+.dev {
+    position: relative;
+    top: 300px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+}
+
+.welc {
+    font-size: 30px;
+    color: aqua;
+}
+
+.intro {
+    top: 700px;
+    position: relative;
+}
+
+.about {
+    margin-left: 50px;
+    position: absolute;
+}
+
+
+.abt {
+    color: gray;
+}
+
+.cInfo {
+    color: aqua;
+}
+
+/* Social Medias Section */
+
+.socmeds {
+    margin-right: 30px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.about {
+    position: relative;
+}
+
+.get {
+    color: aqua;
+    position: relative;
+    font-size: 30px;
+}
+
+.con {
+    color: gray;
+    margin-left: 50px;
+}
+
+.contactinf {
+    position: relative;
+    top: 10px;
+    left: 340;
+}
+
+.facebook {
+    position: absolute;
+    right: 500;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.facebook img {
+    height: 1.5rem;
+}
+
+.facebook :hover {
+    opacity: .8;
+    transition: .3s;
+}
+
+.email {
+    position: absolute;
+    right: 450;
+    border-radius: 50%;
+    padding: .3px;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.email img {
+    height: 1.9rem;
+}
+
+.email :hover {
+    opacity: .8;
+    transition: .3s;
+}
+
+.github {
+    position: absolute;
+    right: 400;
+    border-radius: 50%;
+    padding: 2.5px;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.github img {
+    height: 1.6rem;
+}
